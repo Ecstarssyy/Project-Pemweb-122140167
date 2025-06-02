@@ -1,0 +1,140 @@
+{
+  "info": {
+    "name": "Event API",
+    "_postman_id": "event-api-collection-001",
+    "description": "Collection for Event API (CRUD Event & Participants)",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get All Events",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6543/api/events",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "events"]
+        }
+      }
+    },
+    {
+      "name": "Create Event",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Sample Event\",\n  \"location\": \"Jakarta\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:6543/api/events/create",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "events", "create"]
+        }
+      }
+    },
+    {
+      "name": "Get Event By ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6543/api/events/edit/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "events", "edit", "1"]
+        }
+      }
+    },
+    {
+      "name": "Update Event",
+      "request": {
+        "method": "PUT",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"Updated Event\",\n  \"location\": \"Bandung\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:6543/api/events/edit/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "events", "edit", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Event",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6543/api/events/delete/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "events", "delete", "1"]
+        }
+      }
+    },
+    {
+      "name": "Get Participants by Event",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6543/api/participants/get/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "participants", "get", "1"]
+        }
+      }
+    },
+    {
+      "name": "Add Participant",
+      "request": {
+        "method": "POST",
+        "header": [
+          { "key": "Content-Type", "value": "application/json" }
+        ],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n  \"name\": \"John Doe\",\n  \"email\": \"john@example.com\"\n}"
+        },
+        "url": {
+          "raw": "http://localhost:6543/api/participants/create/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "participants", "create", "1"]
+        }
+      }
+    },
+    {
+      "name": "Delete Participant",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:6543/api/participants/delete/1",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "6543",
+          "path": ["api", "participants", "delete", "1"]
+        }
+      }
+    }
+  ]
+} 
