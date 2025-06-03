@@ -56,10 +56,8 @@ http://localhost:5173
 
 ## 📦 Script NPM
 - `npm run dev` - Menjalankan aplikasi dalam mode development
-- `npm run build` - Build aplikasi untuk production
-- `npm run preview` - Preview build production
-- `npm run lint` - Menjalankan ESLint
-- `npm run test` - Menjalankan test.
+- 'pserve development.ini' - Menjalankan backend
+
 
 
 
